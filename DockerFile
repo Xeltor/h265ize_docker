@@ -10,6 +10,7 @@ RUN apk add --no-cache --update-cache git ffmpeg && \
 	mkdir /h265ize && \
 	mkdir /h265ize/h265 && \
 	chown -R 99:100 /h265ize && \
+	chmod -R 777 /h265ize && \
     rm /var/cache/apk/*
 
 VOLUME ["/input"]
