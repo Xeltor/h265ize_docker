@@ -8,8 +8,8 @@ RUN apk add --no-cache --update-cache git ffmpeg && \
     apk del git && \
     mkdir /watch && \
     rm /var/cache/apk/* && \
-	groupadd -g 100 users && \
-	useradd -u 99 -g users nobody && \
+	addgroup -g 100 -S users && \
+	adduser -u 99 -S nobody -G users && \
 	chown -R 99:100 /h265ize
 
 VOLUME ["/watch"]
