@@ -1,4 +1,4 @@
-FROM node:latest-alpine
+FROM node:alpine
 MAINTAINER Xeltor
 
 LABEL h265ize_version="bleading edge" architecture="amd64"
