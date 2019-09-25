@@ -7,6 +7,7 @@ RUN apk add --no-cache --update-cache git ffmpeg shadow && \
     npm install Xeltor/h265ize --global --no-optional && \
     apk del git && \
     mkdir /watch && \
+    mkdir /h265ize && \
 	groupmod -g 100 users && \
 	usermod -u 99 -g 100 nobody && \
 	chown -R 99:100 /h265ize
